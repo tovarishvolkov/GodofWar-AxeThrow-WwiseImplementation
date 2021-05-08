@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}" SchemaVersion="103">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{A20A2FCE-1B72-419B-9341-E442B8E9E863}" WorkUnitID="{1290971B-7036-4444-86D2-25807E69EE0A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{175C8712-F048-4673-B728-DC4E79BC56BA}">
+							<ChildrenList>
+								<Bus Name="Character" ID="{246A7A37-660E-4D0B-BFAE-30FDE6A783FB}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Axe" ID="{BFD43E1C-81EE-4679-9B36-67C1609FE189}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Box" ID="{B9611594-0584-4DB2-9182-0842DDBD0529}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<AuxBus Name="AUX" ID="{567426DA-37CB-419D-B130-0804D37E20A9}">
+							<ChildrenList>
+								<AuxBus Name="Reverb" ID="{28BFC629-7FBB-4679-AFDE-540D34692ABA}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Medium_Room1" ID="{71B802A7-03E2-4998-B241-B2B84FE9DDFF}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</AuxBus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

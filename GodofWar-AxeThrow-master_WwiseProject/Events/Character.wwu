@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4FA8EFC6-D3E7-443D-BF0D-E6B1E697462B}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Character" ID="{4FA8EFC6-D3E7-443D-BF0D-E6B1E697462B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Move" ID="{C33791EE-70C1-418C-8AC3-0B53FA741CBC}" ShortID="815279864">
+					<ChildrenList>
+						<Event Name="Play_Move" ID="{EE9C1142-8F70-4B0B-A69C-78C448200DB6}">
+							<ChildrenList>
+								<Action Name="" ID="{1133C1EE-B85D-41BF-81D2-156EDEDFDFB0}" ShortID="1039173258">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Move" ID="{D1D14216-A1A6-4330-8E7F-236E2D0500BB}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Throw" ID="{6F4D9A52-C800-416E-A0A0-C73D6C1F819C}">
+							<ChildrenList>
+								<Action Name="" ID="{F5A79D05-BD32-493C-8CFC-9674AECB4F80}" ShortID="366190658">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Throw" ID="{08E10A2D-53FD-471B-9506-67269B00E360}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pull" ID="{14A1FC37-C7EC-4DEE-BA2F-71E7DD1532DC}">
+							<ChildrenList>
+								<Action Name="" ID="{19508EA2-C4D0-4D02-92CA-D479D93F73D9}" ShortID="1040060175">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pull" ID="{251BD82C-5F9F-4EE0-915D-5C14EFC2095D}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Grab" ID="{B88AB4D9-A30D-4351-A7DD-D33CE7C124E5}">
+							<ChildrenList>
+								<Action Name="" ID="{D690DD6C-141B-4A65-A7AF-E051A3F4D306}" ShortID="435976833">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Grab" ID="{13D8B567-D94A-4F8F-9788-7E46E17DC453}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Revers_Axe" ID="{24403CFF-8790-4327-B926-C215A9B76675}" ShortID="136155241">
+					<ChildrenList>
+						<Event Name="Play_Revers_Axe" ID="{182EC87F-86FE-4FDA-AB46-B9C9A467C822}">
+							<ChildrenList>
+								<Action Name="" ID="{852F660B-0FFE-4471-AEA6-EDD68A1ADC25}" ShortID="679335050">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Revers_Axe" ID="{FE02F93E-BDAC-4600-89C5-D159460ECE89}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Revers_Axe" ID="{C17D9E74-7B07-491B-97C0-99901D355770}">
+							<ChildrenList>
+								<Action Name="" ID="{1ADD678A-E98B-4827-B136-997C66DF610E}" ShortID="479457613">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.6"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Revers_Axe" ID="{FE02F93E-BDAC-4600-89C5-D159460ECE89}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Voices" ID="{5BF46A1C-899F-4083-8FFA-F3D34F398C02}" ShortID="1043375336">
+					<ChildrenList>
+						<Event Name="Play_ThrowVoice" ID="{34F3C9A0-9E7D-4732-B31F-D25266FCA3BA}">
+							<ChildrenList>
+								<Action Name="" ID="{FF362090-A401-43CF-8733-C2A144353751}" ShortID="618973746">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ThrowVoice" ID="{76B93EB0-820C-49FC-B587-D91622731460}" WorkUnitID="{EA4FC98D-3712-497D-873D-0499B962E0E3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

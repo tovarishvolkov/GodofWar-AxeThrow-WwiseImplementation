@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{923F8E96-73E8-4F73-8A2A-5255968CD152}" SchemaVersion="94" RootDocumentID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}">
+	<AudioObjects>
+		<WorkUnit Name="Axe" ID="{923F8E96-73E8-4F73-8A2A-5255968CD152}" OwnerID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Axe" ID="{F8E4E98A-CDDB-4EC5-989C-C1611C2295D8}" ShortID="620410016">
+					<PropertyList>
+						<Property Name="GameAuxSendLPF" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{F8AC6955-985F-474A-AF50-BC452BB5D1AB}" ShortID="183644227">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{8A98C319-2EC0-4C1C-9E73-FE5C0168610A}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-17</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>95</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{B71E1CFE-A3B7-4AD1-8E23-7BDB7F73BA2E}" ShortID="322242520">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{97B5F70B-7B24-4FB3-9C36-4BDA9295478F}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>21.1381</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Axe" ID="{BFD43E1C-81EE-4679-9B36-67C1609FE189}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Punch" ID="{F304256E-ECAB-484D-B705-2FA5C52D5CC1}" ShortID="532595342">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Att_Axe_Punch" ID="{A742CD3A-0AA6-484A-B2B8-CDEC0A90E34B}" WorkUnitID="{2472E4EB-FFC6-449F-9F4B-390535BAA9A2}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Axe_Punch_Switch" ID="{BFA5B38A-7EF7-41BB-8A87-D43EB2A9EF2C}" WorkUnitID="{FA70BAA4-7F2A-4056-A9F3-8BDBBC776C6F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="stonePunch" ID="{A8D6BBC8-9885-4E53-B91A-EC7AAC276782}" ShortID="382943249">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="slide" ID="{3DAA824D-D1EF-4D82-8E2A-6202FA5B4972}" ShortID="233520685">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{B284E2E1-D7C0-4368-8169-F0AE1517E3DE}" ShortID="380120006">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{04AAF4BB-5383-44C9-8580-BFA1897E3961}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>4</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>49.87805</XPos>
+																		<YPos>46</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>45</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{A60D8D53-AE30-449A-849A-4B6766A9A106}" ShortID="876694250">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B4F6FD23-1917-4175-A5FB-18FD2038379C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0.14848</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>30.2439</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Axe_Hit_Stone_Slide_1" ID="{9F644D10-4265-4F1B-95FC-808773C53EE0}" ShortID="178600103">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Hit_Stone_Slide_1" ID="{4D3188E6-6FDD-4838-B159-FF4EAFA63B98}" ShortID="420691420">
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Hit_Stone_Slide_1" ID="{4D3188E6-6FDD-4838-B159-FF4EAFA63B98}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Axe_Hit_Stone_Slide_2" ID="{E2F40529-D5F1-421D-8082-C67466E4F8A3}" ShortID="689683374">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Hit_Stone_Slide_2" ID="{01864909-4CB7-4EAF-B145-021B56FA3B56}" ShortID="1029313155">
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Hit_Stone_Slide_2" ID="{01864909-4CB7-4EAF-B145-021B56FA3B56}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Axe_Hit_Stone_Slide_3" ID="{36F5A71F-A717-485D-8488-4BFD448DDBD4}" ShortID="152080744">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Hit_Stone_Slide_3" ID="{684D4A34-95ED-42A1-9844-06A65AE733B7}" ShortID="500207129">
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Hit_Stone_Slide_3" ID="{684D4A34-95ED-42A1-9844-06A65AE733B7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="stonePunch" ID="{B1018456-6A9F-46A7-815B-165703AF24C3}" ShortID="437266466">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{05FD49A5-D154-4299-96BE-8EECCCF1AA07}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Axe_Stone_Punch_1" ID="{2CC43BEE-A537-49C8-A175-93054F70C1C2}" ShortID="924429687">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Stone_Punch_1" ID="{11C4B061-7D87-4C47-AF7B-0B11FCDC5BA9}" ShortID="159800974">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0.203516313932981"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.203516313932981"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Stone_Punch_1" ID="{11C4B061-7D87-4C47-AF7B-0B11FCDC5BA9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Axe_Stone_Punch_2" ID="{2FFE1CE5-A75A-4EB0-B8C1-71E6FF5EAF01}" ShortID="1004918940">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Stone_Punch_2" ID="{A2DE2F19-A2B3-426C-922D-2F9B4AE5294D}" ShortID="180328107">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0.203516313932981"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.203516313932981"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Stone_Punch_2" ID="{A2DE2F19-A2B3-426C-922D-2F9B4AE5294D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Axe_Stone_Punch_3" ID="{F47D2595-B7E9-49D1-9FDD-BE89AABEA5A4}" ShortID="384542082">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Stone_Punch_3" ID="{9720CC86-5F4F-4BB0-9A2E-418D6F4B20FD}" ShortID="935747969">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0.203516313932981"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.203516313932981"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Stone_Punch_3" ID="{9720CC86-5F4F-4BB0-9A2E-418D6F4B20FD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="woodPunch" ID="{FF152A96-DAE6-4254-AA04-7A944CDCBE5C}" ShortID="931294631">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="creack" ID="{6C2F2D6D-3E10-4D2B-8F15-1FE9C1DB7C9F}" ShortID="567543195">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4C8353F9-A2E8-44D4-B123-95B4EB6AE15E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-16"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{18C7DD32-E883-4A96-87B1-C7ADD09E351A}" ShortID="535445523">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{ACCA9505-705D-406D-A802-78B8A0C09F4F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.45328</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Axe_Wood_Creack_1" ID="{7B391226-E765-42E7-8D33-577BB7A6B646}" ShortID="217468862">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Wood_Creack_1" ID="{635CAFA0-97EF-43D4-8D62-AF908769A16E}" ShortID="770542491">
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\woodPunch\creack\Axe_Wood_Creack_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Wood_Creack_1" ID="{635CAFA0-97EF-43D4-8D62-AF908769A16E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Axe_Wood_Creack_2" ID="{D3D2DDDF-EDD3-444F-A25A-3CA65C0F6D6E}" ShortID="231744346">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Wood_Creack_2" ID="{D3997F7C-EB74-432B-99BB-C326836FF9B6}" ShortID="810218144">
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\woodPunch\creack\Axe_Wood_Creack_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Wood_Creack_2" ID="{D3997F7C-EB74-432B-99BB-C326836FF9B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Axe_Wood_Creack_3" ID="{2367A9F1-D6DD-48D9-B446-A1892B10457C}" ShortID="753408634">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Axe_Wood_Creack_3" ID="{CC3ECD81-2E6A-4177-9468-CAF2096D6C07}" ShortID="725532281">
+															<Language>SFX</Language>
+															<AudioFile>Axe\Punch\woodPunch\creack\Axe_Wood_Creack_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Axe_Wood_Creack_3" ID="{CC3ECD81-2E6A-4177-9468-CAF2096D6C07}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Axe_Wood_Punch" ID="{3F8FBADA-841D-4F31-A15C-0A3030C96BAD}" ShortID="803518738">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C161093D-3DBF-4DD7-951E-91BD6D122C08}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Axe_Wood_Punch" ID="{7D63B531-D18A-4E20-B4CB-E6A60246AF6E}" ShortID="487888699">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.210429736709499"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.210429736709499"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Axe\Punch\woodPunch\Axe_Wood_Punch.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Axe_Wood_Punch" ID="{7D63B531-D18A-4E20-B4CB-E6A60246AF6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="woodPunch" ID="{FF152A96-DAE6-4254-AA04-7A944CDCBE5C}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="stonePunch" ID="{A8D6BBC8-9885-4E53-B91A-EC7AAC276782}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{5AF0919A-65B0-43DE-A743-4633937D0612}"/>
+										<ItemList>
+											<ItemRef Name="woodPunch" ID="{FF152A96-DAE6-4254-AA04-7A944CDCBE5C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Stone" ID="{50D2E1FB-0227-4D57-99E2-6CB3CC773C93}"/>
+										<ItemList>
+											<ItemRef Name="stonePunch" ID="{A8D6BBC8-9885-4E53-B91A-EC7AAC276782}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<ActorMixer Name="Swoosh" ID="{F0C36386-31CC-4D80-923C-2B45FA5FC313}" ShortID="145052557">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Whoosh" ID="{9F4DB58A-E898-421C-B40A-EFB9EA6C46A8}" ShortID="283788292">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Axe_Whoosh" ID="{DBF3280A-5EBC-48B3-9C5F-AA8A7403B94E}" WorkUnitID="{2472E4EB-FFC6-449F-9F4B-390535BAA9A2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Axe_whoosh_1" ID="{C4F51656-5125-41C6-A108-3E3D575177D4}" ShortID="289144056">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Axe_whoosh_1" ID="{C610BCFC-65FA-4302-98CA-ABCC51D11D55}" ShortID="621883709">
+													<Language>SFX</Language>
+													<AudioFile>Axe\Swoosh\Whoosh\Axe_whoosh_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Axe_whoosh_1" ID="{C610BCFC-65FA-4302-98CA-ABCC51D11D55}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Axe_whoosh_2" ID="{D29512CF-EF6B-4E4E-BBA3-47FC5C9E4850}" ShortID="837305327">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Axe_whoosh_2" ID="{BD5F79D7-4E0A-439C-A00B-FCF78CC5F22D}" ShortID="896679399">
+													<Language>SFX</Language>
+													<AudioFile>Axe\Swoosh\Whoosh\Axe_whoosh_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Axe_whoosh_2" ID="{BD5F79D7-4E0A-439C-A00B-FCF78CC5F22D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{6C94B0B2-AA8B-4E6A-A19D-74E74B3646B6}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA4FC98D-3712-497D-873D-0499B962E0E3}" SchemaVersion="103" RootDocumentID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}" ParentDocumentID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}">
+	<AudioObjects>
+		<WorkUnit Name="Character" ID="{EA4FC98D-3712-497D-873D-0499B962E0E3}" OwnerID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Character" ID="{CBC4ABD4-1D4E-47AC-AFB3-CD5C90C00888}" ShortID="876922673">
+					<PropertyList>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Character" ID="{246A7A37-660E-4D0B-BFAE-30FDE6A783FB}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Movements" ID="{D47A07DD-597F-4FB5-B210-0971ABB3ED11}" ShortID="462134631">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Grab" ID="{13D8B567-D94A-4F8F-9788-7E46E17DC453}" ShortID="950485776">
+									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CBE2CC7C-B0C2-45BC-A46E-33A4C808A6D6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="GoW_AxeThrow_grab_1" ID="{1AB2DD5C-6A07-46DE-8769-728A9BE3F379}" ShortID="972256330">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoW_AxeThrow_grab_1" ID="{0FC33449-97AE-409D-B4C0-3093AB451C49}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Movements\Grab\GoW_AxeThrow_grab_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="648335772"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GoW_AxeThrow_grab_1" ID="{0FC33449-97AE-409D-B4C0-3093AB451C49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoW_AxeThrow_grab_2" ID="{ABBF38F8-AAAD-4408-9D46-D7FFC2E171C2}" ShortID="667810740">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoW_AxeThrow_grab_2" ID="{B1BAB80E-D398-48B7-9A25-FA2B6689CE85}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Movements\Grab\GoW_AxeThrow_grab_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="443633234"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GoW_AxeThrow_grab_2" ID="{B1BAB80E-D398-48B7-9A25-FA2B6689CE85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoW_AxeThrow_grab_3" ID="{C77D2221-88CC-4009-8193-759810AA47FA}" ShortID="57605976">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoW_AxeThrow_grab_3" ID="{FC60F1D2-6328-4D95-B309-59CF101546D4}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Movements\Grab\GoW_AxeThrow_grab_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="995587846"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GoW_AxeThrow_grab_3" ID="{FC60F1D2-6328-4D95-B309-59CF101546D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoW_AxeThrow_grab_4" ID="{6DBAFC44-C346-494C-9349-02D4B2233172}" ShortID="722125363">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoW_AxeThrow_grab_4" ID="{46FE396B-12CC-4F53-9C51-DBEF92EECEBA}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Movements\Grab\GoW_AxeThrow_grab_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="814315865"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="GoW_AxeThrow_grab_4" ID="{46FE396B-12CC-4F53-9C51-DBEF92EECEBA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Move" ID="{D1D14216-A1A6-4330-8E7F-236E2D0500BB}" ShortID="320674229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Clothes" ID="{40B59195-C136-4F35-95E6-F42B65A767ED}" ShortID="75453568">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-19</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{31D0C227-EDAB-46F0-9221-2019BA526EBA}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-18"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Char_Move_clothes_1" ID="{01CF5328-1DEB-472E-B408-814F9430C20F}" ShortID="1048623888">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_1" ID="{978A6AF9-0DDA-43F2-A086-EE409CC62A4C}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="887471447"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_1" ID="{978A6AF9-0DDA-43F2-A086-EE409CC62A4C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_2" ID="{9CA4A60E-0E85-4B97-B5F0-F05A01173BBD}" ShortID="508624529">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_2" ID="{DC37113C-D4F4-450B-A59E-F718EAD8B0B5}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="30874041"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_2" ID="{DC37113C-D4F4-450B-A59E-F718EAD8B0B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_3" ID="{DD1E3FF2-0CC2-48A6-A6AA-F8399F7A9964}" ShortID="768523745">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_3" ID="{F8240777-C45B-4B6C-A1E6-9C2104F3D02F}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="486146354"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_3" ID="{F8240777-C45B-4B6C-A1E6-9C2104F3D02F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_4" ID="{E94658B4-85DC-4B79-B519-7B508B2B6C88}" ShortID="893751702">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_4" ID="{62C6D180-00F0-438F-A2CF-64155F8D2E26}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="608650826"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_4" ID="{62C6D180-00F0-438F-A2CF-64155F8D2E26}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_5" ID="{F138C1AE-026B-4B15-B1E8-E2F035582B65}" ShortID="750514489">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_5" ID="{E9FEE1A6-0FFA-4D06-BB49-3B2563EE3595}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1045906989"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_5" ID="{E9FEE1A6-0FFA-4D06-BB49-3B2563EE3595}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_6" ID="{92DBD23F-BED9-4504-96CA-F86A785AF072}" ShortID="544770441">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_6" ID="{6CF0AC1A-A8E5-480F-AA6F-8AD3AA824E55}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="155642060"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_6" ID="{6CF0AC1A-A8E5-480F-AA6F-8AD3AA824E55}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_7" ID="{4F384B52-86C6-402E-A75B-F036D79B09B2}" ShortID="804831113">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_7" ID="{8294A2EE-58A1-4A81-B5CE-29BF09F0416C}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="93824433"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_7" ID="{8294A2EE-58A1-4A81-B5CE-29BF09F0416C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_8" ID="{3B0490A3-7299-44F8-A1FB-5E83D0272A5E}" ShortID="808617269">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_8" ID="{A5197BFD-2A33-4D3A-8E4F-9E86D6CE7A81}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="20304182"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_8" ID="{A5197BFD-2A33-4D3A-8E4F-9E86D6CE7A81}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Footsteps" ID="{86983718-4CAC-4841-8B15-662E7BA87AAA}" ShortID="466348494">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3DB602EF-16E9-4D8D-83F8-84293945B92B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6E6648FB-14BE-471E-9E6E-5E698A1531AB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-14"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Char_Move_Footsteps_stone_1" ID="{0598CE92-0879-4D9F-8BE8-519075B247F1}" ShortID="45991470">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_1" ID="{09DDD72E-FDE6-4DCB-8627-98D8CE866A0F}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="895188735"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_1" ID="{09DDD72E-FDE6-4DCB-8627-98D8CE866A0F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_2" ID="{D73AEA4B-CEEA-499E-BBC6-9206EA7269DB}" ShortID="926189397">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_2" ID="{3E92E7C4-FABB-46B0-AA31-1E74672333D0}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="58206787"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_2" ID="{3E92E7C4-FABB-46B0-AA31-1E74672333D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_3" ID="{E2F6662F-319F-4DC8-994E-7D30CE2EEACE}" ShortID="407394017">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_3" ID="{0A90FE7B-F3DD-4F3D-9273-3A83B6642091}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="49666919"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_3" ID="{0A90FE7B-F3DD-4F3D-9273-3A83B6642091}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_4" ID="{48A047FB-2939-455E-BEBD-AA53F18DC664}" ShortID="556332903">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_4" ID="{A0ACF7E9-C951-4A76-A5AA-4FE16A34FCAD}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="620701919"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_4" ID="{A0ACF7E9-C951-4A76-A5AA-4FE16A34FCAD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_5" ID="{8CDF5A07-A7CD-48CC-9FA6-5CD595E7BD10}" ShortID="1061160665">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_5" ID="{95B9C47D-DA46-47F4-8A21-86733F41114C}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="187469863"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_5" ID="{95B9C47D-DA46-47F4-8A21-86733F41114C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_6" ID="{4269CC2E-8480-4580-A0A5-F549E939B1F7}" ShortID="832308513">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_6" ID="{2669278D-C552-4F41-A839-AC96395ED372}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="448158442"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_6" ID="{2669278D-C552-4F41-A839-AC96395ED372}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_7" ID="{E544ABF1-260B-4C6D-B9BB-2A1F8231BB96}" ShortID="497078469">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_7" ID="{D786E93C-B03F-48E1-AF45-930AB3E8F4A5}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="544712739"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_7" ID="{D786E93C-B03F-48E1-AF45-930AB3E8F4A5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_Footsteps_stone_8" ID="{CC9B0378-E0BF-445A-83A1-804D68817C5E}" ShortID="41663050">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_Footsteps_stone_8" ID="{29755263-9025-4BAE-8C5C-B7FB420A2B42}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Footsteps\Char_Move_Footsteps_stone_8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="520768121"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_Footsteps_stone_8" ID="{29755263-9025-4BAE-8C5C-B7FB420A2B42}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Pull" ID="{251BD82C-5F9F-4EE0-915D-5C14EFC2095D}" ShortID="364320085">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="LeatherScreatch" ID="{046D60D6-271F-4AA7-A123-B822237E642C}" ShortID="992394014">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Char_Pull_LScreatch" ID="{A54CD564-632B-442C-BD7A-7B4158CF4FB2}" ShortID="669460423">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Pull_LScreatch" ID="{AB5134AA-E32A-4C57-B99A-74D6DBABC106}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.487858245149912"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.909190365961199"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Pull\LeatherScreatch\Char_Pull_LScreatch.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="446254470"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Pull_LScreatch" ID="{AB5134AA-E32A-4C57-B99A-74D6DBABC106}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Pull_LScreatch_01" ID="{4CEBFB9E-3F10-435E-B586-1FFD4B511522}" ShortID="939350698">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Character" ID="{246A7A37-660E-4D0B-BFAE-30FDE6A783FB}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Pull_LScreatch" ID="{43646C50-01DE-4582-87B3-258D7F48CB75}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.909190365961199"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.25956128747795"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Pull\LeatherScreatch\Char_Pull_LScreatch.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="887377794"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Pull_LScreatch" ID="{43646C50-01DE-4582-87B3-258D7F48CB75}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Clothes" ID="{75D317AF-B42F-4CEB-A0A2-C5D8844D07C6}" ShortID="180067542">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9205BEAF-E311-4754-A988-824306A1D774}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-18"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{246A7A37-660E-4D0B-BFAE-30FDE6A783FB}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Char_Move_clothes_1" ID="{FC5B2E67-9A4D-4D0A-9A31-2F0B0A81E12B}" ShortID="1073427789">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_1" ID="{22464DAE-215A-4024-9245-073FD3AD620D}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="887471447"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_1" ID="{22464DAE-215A-4024-9245-073FD3AD620D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_2" ID="{834F422C-1CD8-466D-B24D-531CB9ABC012}" ShortID="283058110">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_2" ID="{28285420-C62C-4646-BB2F-E0A9DDC73225}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="30874041"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_2" ID="{28285420-C62C-4646-BB2F-E0A9DDC73225}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_3" ID="{98908B8E-34D5-4D2F-9D48-C7897ADC9A55}" ShortID="704450703">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_3" ID="{86136666-9B80-457D-B098-0E1103430E30}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="486146354"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_3" ID="{86136666-9B80-457D-B098-0E1103430E30}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_4" ID="{4439CC19-D6A3-48EA-B631-8B7F973AC008}" ShortID="101382016">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_4" ID="{A930D2B4-7768-4768-9055-30026181C651}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="608650826"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_4" ID="{A930D2B4-7768-4768-9055-30026181C651}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_5" ID="{7F310A5A-011F-475F-8C9F-9257B98B81B7}" ShortID="1055706605">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_5" ID="{5F55E5A9-911B-4F6F-964E-396361CF49A4}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1045906989"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_5" ID="{5F55E5A9-911B-4F6F-964E-396361CF49A4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_6" ID="{9EABBA2A-B48A-425A-9715-48E1D291E29D}" ShortID="52275260">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_6" ID="{0C2DA5AD-CAD1-48EA-829D-842F7AAD980B}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="155642060"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_6" ID="{0C2DA5AD-CAD1-48EA-829D-842F7AAD980B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_7" ID="{555670DC-E569-45F1-BA7D-184A3A6DE183}" ShortID="134155681">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_7" ID="{68432CE4-D784-4D2F-8223-0439FF125B55}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="93824433"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_7" ID="{68432CE4-D784-4D2F-8223-0439FF125B55}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Char_Move_clothes_8" ID="{994161D7-5511-4943-8D0C-D0ED38D14267}" ShortID="989584242">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Char_Move_clothes_8" ID="{542A11F4-0ACC-42E0-8FA8-8FA5AFEDED0B}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Move\Clothes\Char_Move_clothes_8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="20304182"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Char_Move_clothes_8" ID="{542A11F4-0ACC-42E0-8FA8-8FA5AFEDED0B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Throw" ID="{08E10A2D-53FD-471B-9506-67269B00E360}" ShortID="397445965">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Axe_Blade" ID="{48006DC3-3941-4908-9FA6-275485D962F1}" ShortID="70901505">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C1706D9D-D7E2-459E-A262-1683B24B0684}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GoW_AxeThrow_axe_Blade_1" ID="{960D7EE8-3D0F-4720-9184-D0CC43BD4090}" ShortID="726310359">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_axe_Blade_1" ID="{73E31985-A928-4F8A-B3F0-AE617C4C0C25}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Axe_Blade\GoW_AxeThrow_axe_Blade_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="50603592"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_axe_Blade_1" ID="{73E31985-A928-4F8A-B3F0-AE617C4C0C25}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GoW_AxeThrow_axe_Blade_2" ID="{2EAA24B7-F792-43C0-889E-C333AF12A40E}" ShortID="240341691">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_axe_Blade_2" ID="{0A273DE5-46D7-4E67-A991-29B78D9A3F74}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Axe_Blade\GoW_AxeThrow_axe_Blade_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="344530561"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_axe_Blade_2" ID="{0A273DE5-46D7-4E67-A991-29B78D9A3F74}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GoW_AxeThrow_axe_Blade_3" ID="{BEE92A4F-74E7-4391-A98A-6976D9CC763E}" ShortID="483541529">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_axe_Blade_3" ID="{E11D9AB1-B5B4-4398-8159-3C82CC404293}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Axe_Blade\GoW_AxeThrow_axe_Blade_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="671300619"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_axe_Blade_3" ID="{E11D9AB1-B5B4-4398-8159-3C82CC404293}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GoW_AxeThrow_axe_Blade_4" ID="{6E30820A-C747-4160-B2AD-4C74ECB8D772}" ShortID="169403512">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_axe_Blade_4" ID="{10D429FB-AA76-4D67-889A-7D4B16CE91E2}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Axe_Blade\GoW_AxeThrow_axe_Blade_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="549773651"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_axe_Blade_4" ID="{10D429FB-AA76-4D67-889A-7D4B16CE91E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Whoosh" ID="{60DB21D9-0E65-4135-BF88-A7328455A8F4}" ShortID="166275898">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5582C398-4C31-42EA-AB99-EBCB2AA2A32E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2CFB9359-CD31-4F31-8F7D-CCFB911C1A21}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GoW_AxeThrow_whoosh_1" ID="{76B0134A-9B03-4A4C-86C9-7B477F808BBF}" ShortID="1051673742">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_whoosh_1" ID="{408124D4-3CC4-425C-AF4E-1BEB741061F7}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Whoosh\GoW_AxeThrow_whoosh_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="522362166"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_whoosh_1" ID="{408124D4-3CC4-425C-AF4E-1BEB741061F7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GoW_AxeThrow_whoosh_2" ID="{E1D6B518-8CD9-46F8-A36C-4F2EF0F4BACA}" ShortID="599662332">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_whoosh_2" ID="{A6A9AE31-C816-4FBA-988D-E9A71F1375E2}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Whoosh\GoW_AxeThrow_whoosh_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="183961272"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_whoosh_2" ID="{A6A9AE31-C816-4FBA-988D-E9A71F1375E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GoW_AxeThrow_whoosh_3" ID="{8486DA3C-E59C-4350-B740-04641848DBB7}" ShortID="552262808">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_whoosh_3" ID="{20621681-D844-4C90-ACB3-6F10EE94E71E}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Whoosh\GoW_AxeThrow_whoosh_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="846227729"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_whoosh_3" ID="{20621681-D844-4C90-ACB3-6F10EE94E71E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GoW_AxeThrow_whoosh_4" ID="{91CEBBF3-B93E-4D2B-A5D5-EF785972FC91}" ShortID="200384667">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoW_AxeThrow_whoosh_4" ID="{0CD20BB2-9A4F-49DE-AB82-57B1AFF2F6E7}">
+															<Language>SFX</Language>
+															<AudioFile>Character\Movements\Throw\Whoosh\GoW_AxeThrow_whoosh_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="789139771"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="GoW_AxeThrow_whoosh_4" ID="{0CD20BB2-9A4F-49DE-AB82-57B1AFF2F6E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<BlendContainer Name="Revers_Axe" ID="{FE02F93E-BDAC-4600-89C5-D159460ECE89}" ShortID="352865211">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GoW_AxeThrow_Blade" ID="{27DE31A9-C900-4D9C-A96F-8000757D7A1B}" ShortID="791994291">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GoW_AxeThrow_Blade" ID="{25D5FC2A-7EF7-4408-B4AE-01C62A213D20}">
+											<Language>SFX</Language>
+											<AudioFile>Character\Revers_Axe\GoW_AxeThrow_Blade.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="276370856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="GoW_AxeThrow_Blade" ID="{25D5FC2A-7EF7-4408-B4AE-01C62A213D20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GoW_AxeThrow_Revers_Axe - stem" ID="{C5B633F4-A994-445F-93FE-94277CEA0CF6}" ShortID="821591426">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GoW_AxeThrow_Revers_Axe - stem" ID="{C9345170-2B5C-4486-A6F2-9D1845B12787}">
+											<Language>SFX</Language>
+											<AudioFile>Character\Revers_Axe\GoW_AxeThrow_Revers_Axe - stem.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432598144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="GoW_AxeThrow_Revers_Axe - stem" ID="{C9345170-2B5C-4486-A6F2-9D1845B12787}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GoW_AxeThrow_SUB" ID="{830E964C-6D1D-48B9-A69C-E73DCA040A93}" ShortID="1010583872">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GoW_AxeThrow_SUB" ID="{269673DE-A6B9-4456-AE15-EC9877B6E3FC}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2"/>
+												<Property Name="CrossfadeShape" Type="int16" Value="4"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.536029380612493"/>
+												<Property Name="LoopEnd" Type="Real64" Value="1.49935459440713"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Character\Revers_Axe\GoW_AxeThrow_SUB.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="592431302"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="GoW_AxeThrow_SUB" ID="{269673DE-A6B9-4456-AE15-EC9877B6E3FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<BlendTrackList>
+								<BlendTrack Name="Revers_Axe" ID="{B4732B3E-D0F1-489F-8CFD-AE7F462624B6}" ShortID="23847175">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{3BDBEE36-221D-4FE6-8B82-94CDAA088FA0}" ShortID="1004034299">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{6A85CF66-F0E8-4BE0-A10D-4FF87065EC53}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0.64369</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.81236</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="GoW_AxeThrow_Revers_Axe - stem" ID="{C5B633F4-A994-445F-93FE-94277CEA0CF6}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="Blade" ID="{47C03ADF-8A38-4AEC-86AA-4D111482F056}" ShortID="562879421">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{F4CC7243-3470-432D-ABC3-6BC2EE4D9CE0}" ShortID="166636659">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CAAE5D52-DB85-45FB-BDE1-D89828B59992}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>51</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{6855BAD9-0BE8-4142-AF88-94F0CEF73E47}" ShortID="137244481">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{F42F726E-A065-48CE-992B-223EED086A73}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>7.35953</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="GoW_AxeThrow_Blade" ID="{27DE31A9-C900-4D9C-A96F-8000757D7A1B}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="Sub" ID="{733D3DAF-14A6-46C9-A914-3219EEE6474E}" ShortID="959636955">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{BB29650B-1416-4374-A598-739E9B5D5CC7}" ShortID="722035122">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{06EE49AE-F852-4BE8-86CE-FA2B2BA51F8C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>41</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-51</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{1E025C51-DDE4-4F21-804D-A24E35DAE07E}" ShortID="862882642">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D4A87A04-52F7-4C87-8961-9C96A7323D17}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-5.7158</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>2.70809</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="GoW_AxeThrow_SUB" ID="{830E964C-6D1D-48B9-A69C-E73DCA040A93}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+						<ActorMixer Name="Voices" ID="{C591532B-D10E-4F6D-A542-0EBE11DA63FB}" ShortID="114435734">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="ThrowVoice" ID="{76B93EB0-820C-49FC-B587-D91622731460}" ShortID="507498002">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B0909FF8-30AB-4EA2-9B9F-9347BD4C26E5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-14"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Char_Voices_Attack_Strong_3" ID="{E054738D-6701-4FF1-80F4-386C56BB5F2A}" ShortID="957646680">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Char_Voices_Attack_Strong_3" ID="{3F7E89E8-8731-4B5F-B84F-AEDDDC4C59E3}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Voices\ThrowVoice\Char_Voices_Attack_Strong_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="237491044"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Char_Voices_Attack_Strong_3" ID="{3F7E89E8-8731-4B5F-B84F-AEDDDC4C59E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Char_Voices_Attack_Strong_4" ID="{CE31E4C8-6697-483A-8D16-EAD4464AB12A}" ShortID="1051315859">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Char_Voices_Attack_Strong_4" ID="{377B5F13-1F7E-41AF-8865-5DB3D84EAAAF}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Voices\ThrowVoice\Char_Voices_Attack_Strong_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="279597936"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Char_Voices_Attack_Strong_4" ID="{377B5F13-1F7E-41AF-8865-5DB3D84EAAAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Char_Voices_Attack_Strong_7" ID="{8E2F90E7-FF19-4FCF-8B7F-B85B6BEC1F23}" ShortID="673315622">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Char_Voices_Attack_Strong_7" ID="{461DF9DE-AB06-4D91-B146-3387F9C03F61}">
+													<Language>SFX</Language>
+													<AudioFile>Character\Voices\ThrowVoice\Char_Voices_Attack_Strong_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="67644109"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Char_Voices_Attack_Strong_7" ID="{461DF9DE-AB06-4D91-B146-3387F9C03F61}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

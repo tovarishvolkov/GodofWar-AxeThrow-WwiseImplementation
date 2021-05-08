@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Axe_Distance" ID="{41EAF331-4A03-4768-BE13-E9D32FA6DC5C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

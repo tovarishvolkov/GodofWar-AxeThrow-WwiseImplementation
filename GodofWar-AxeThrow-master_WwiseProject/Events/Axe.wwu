@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6E9D82CF-CED7-4993-B7BF-47B074ADFB7F}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Axe" ID="{6E9D82CF-CED7-4993-B7BF-47B074ADFB7F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_AxeWhoosh" ID="{D22D84A4-ADFA-41B7-8C19-2AD3FDE17ABA}">
+					<ChildrenList>
+						<Action Name="" ID="{A50C7023-A0D5-4BDB-BEA3-63CF295152AF}" ShortID="836464899">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whoosh" ID="{9F4DB58A-E898-421C-B40A-EFB9EA6C46A8}" WorkUnitID="{923F8E96-73E8-4F73-8A2A-5255968CD152}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AxePunch" ID="{CF84CD25-DBB9-418B-ACE9-9A5E2FC3B3DA}">
+					<ChildrenList>
+						<Action Name="" ID="{B8BF9223-3FE3-46E3-A9FD-102B9FFE656B}" ShortID="910980720">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Punch" ID="{F304256E-ECAB-484D-B705-2FA5C52D5CC1}" WorkUnitID="{923F8E96-73E8-4F73-8A2A-5255968CD152}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,28 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1442029356	Play_AxeWhoosh			\Axe\Play_AxeWhoosh	
+	3191387806	Play_AxePunch			\Axe\Play_AxePunch	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	324241921	Axe_Punch_Switch			\Default Work Unit\Axe_Punch_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Axe_Punch_Switch			
+	2058049674	Wood	Axe_Punch_Switch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3279905827	Axe_Distance			\Default Work Unit\Axe_Distance	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	159800974	Axe_Stone_Punch_1	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_1_D49BE07A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_1		103884
+	180328107	Axe_Stone_Punch_2	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_2_D49BE07A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_2		103884
+	420691420	Axe_Hit_Stone_Slide_1	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_1		188948
+	487888699	Axe_Wood_Punch	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\woodPunch\Axe_Wood_Punch_9E97776C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\woodPunch\Axe_Wood_Punch		93316
+	500207129	Axe_Hit_Stone_Slide_3	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_3		188948
+	621883709	Axe_whoosh_1	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Swoosh\Whoosh\Axe_whoosh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Swoosh\Whoosh\Axe_whoosh_1		87660
+	725532281	Axe_Wood_Creack_3	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\woodPunch\creack\Axe_Wood_Creack_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\woodPunch\creack\Axe_Wood_Creack_3		55236
+	770542491	Axe_Wood_Creack_1	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\woodPunch\creack\Axe_Wood_Creack_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\woodPunch\creack\Axe_Wood_Creack_1		55236
+	810218144	Axe_Wood_Creack_2	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\woodPunch\creack\Axe_Wood_Creack_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\woodPunch\creack\Axe_Wood_Creack_2		55236
+	896679399	Axe_whoosh_2	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Swoosh\Whoosh\Axe_whoosh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Swoosh\Whoosh\Axe_whoosh_2		73480
+	935747969	Axe_Stone_Punch_3	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_3_D49BE07A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\stonePunch\stonePunch\Axe_Stone_Punch_3		103884
+	1029313155	Axe_Hit_Stone_Slide_2	Z:\Volumes\Library\Yandex.Disk.localized\Projects\GameDev\_Practice\GodofWar-AxeThrow-master\GodofWar-AxeThrow-master_WwiseProject\.cache\Mac\SFX\Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Axe\Axe\Punch\stonePunch\slide\Axe_Hit_Stone_Slide_2		188948
+

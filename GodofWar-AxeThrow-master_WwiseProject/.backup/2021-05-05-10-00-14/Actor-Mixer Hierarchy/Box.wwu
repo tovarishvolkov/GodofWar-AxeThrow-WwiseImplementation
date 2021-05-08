@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8E359B9D-FFF8-49E6-96B0-4D1D7FDF22D3}" SchemaVersion="94" RootDocumentID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}">
+	<AudioObjects>
+		<WorkUnit Name="Box" ID="{8E359B9D-FFF8-49E6-96B0-4D1D7FDF22D3}" OwnerID="{F92CA887-A560-43D0-A6E3-CB8F5FA758D2}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Box" ID="{7B74366F-8092-4899-B99F-9ADD5E85630E}" ShortID="1009366122">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+						<Property Name="GameAuxSendLPF" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{59343BA9-0ECD-4D82-AC55-A73B4963FE33}" ShortID="767111009">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{29E38EF2-98AF-4DBF-9F1C-01CE027F29DA}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>20</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-100</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{3FC9B893-2027-4503-BD21-0FC8FE488B33}" ShortID="524222971">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{273055D3-D987-41DC-99B1-679E86C89F96}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Exp1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-4.74721</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Box" ID="{B9611594-0584-4DB2-9182-0842DDBD0529}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="boxesDown" ID="{BCF58F0F-80EC-4883-80AF-9540CA2298BF}" ShortID="511919618">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="49"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Att_Box" ID="{B83CBDAB-2974-4734-8DA3-D56E3EE0CF01}" WorkUnitID="{2472E4EB-FFC6-449F-9F4B-390535BAA9A2}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Down" ID="{8AE66860-55FD-4317-B999-0ECE5AFA070A}" ShortID="959294264">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5952D9A1-E577-4EF6-8570-93108B436E08}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{617B32A1-F188-4303-A771-1D34FC9B8D0D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-16"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Box_Drop_1" ID="{1A205A4D-EFF2-4340-9005-5841EE9D692E}" ShortID="740889707">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Drop_1" ID="{F4DD6F91-3AF3-42DF-A083-0BE4AA7FB067}" ShortID="122468891">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.232561303140017"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="31.0650158729282"/>
+														<Property Name="TrimEnd" Type="Real64" Value="31.6076589135883"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Down\Box_Drop_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Drop_1" ID="{F4DD6F91-3AF3-42DF-A083-0BE4AA7FB067}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Drop_2" ID="{BE69C9C1-1CCE-46F8-9060-31C84D77A7ED}" ShortID="625104487">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Drop_2" ID="{68C9EE7F-E5C3-43F7-BDAF-1707AC76D367}" ShortID="762576412">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0436351628044207"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0509076899384908"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.0337783428399"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.4642028561105"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Down\Box_Drop_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Drop_2" ID="{68C9EE7F-E5C3-43F7-BDAF-1707AC76D367}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Drop_01" ID="{89DBC559-0C00-43E8-AAC6-84B17E882CA7}" ShortID="127632286">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Drop_2" ID="{3CD58C63-86F0-4DD1-813E-588EA04581F3}" ShortID="383072134">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.136194599056221"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.169912679405094"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="14.8271918484843"/>
+														<Property Name="TrimEnd" Type="Real64" Value="15.402918264938"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Down\Box_Drop_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Drop_2" ID="{3CD58C63-86F0-4DD1-813E-588EA04581F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood_Creacks" ID="{69067C1D-0163-4193-B5D3-AA57C7F2ED78}" ShortID="934546541">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EDE94401-0A88-4E35-9F9B-2235836E5D8B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{B83CBDAB-2974-4734-8DA3-D56E3EE0CF01}">
+												<Attenuation Name="Att_Box (Custom)" ID="{12A6832E-6AA3-480B-8285-955917CBAEC6}" ShortID="706225014">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="5"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{A65444D8-EC5C-4B60-9A35-C117A64510E2}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>2.50794</XPos>
+																			<YPos>-12.30574</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>4.999</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{0155410A-BDEF-49F2-9B4C-1813BE22AD98}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>2.50794</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp3</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>51</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None">
+																<Curve Name="Spread" ID="{B21F10E7-8444-4AC3-831B-DAC58BF698EE}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>100</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>0.84127</XPos>
+																			<YPos>100</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log3</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>0</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Box_Wood_Creack_1" ID="{A9D8B9B9-F40B-4C1E-AFE8-EAFC9CA2E5B0}" ShortID="792919535">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_1" ID="{B91E6F04-D2D8-465A-B309-1D5DF10DD71A}" ShortID="530938263">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_1" ID="{B91E6F04-D2D8-465A-B309-1D5DF10DD71A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_2" ID="{05DA893C-E4AA-409E-BD31-F7D605ED45E8}" ShortID="535861054">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_2" ID="{00BF6754-78C6-4003-968E-21995AE75E00}" ShortID="410640120">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_2" ID="{00BF6754-78C6-4003-968E-21995AE75E00}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_3" ID="{40D369EA-6598-4320-B5C4-9E64F3C9F69C}" ShortID="598673424">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_3" ID="{8B3E49AF-5423-4DEB-80DB-713EBF1D6296}" ShortID="192656175">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_3" ID="{8B3E49AF-5423-4DEB-80DB-713EBF1D6296}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_4" ID="{2DBAA539-54F1-4C50-AE43-7714B89BFC70}" ShortID="758139397">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_4" ID="{53652F8C-29CF-4098-A8B8-FC8EDA24290F}" ShortID="285934540">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_4" ID="{53652F8C-29CF-4098-A8B8-FC8EDA24290F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_5" ID="{6D42CB46-8DC0-462D-88A6-30DC2DFB41C1}" ShortID="750540775">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_5" ID="{727C562F-3702-44E6-A3A5-DD25ECCC7229}" ShortID="603647306">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_5" ID="{727C562F-3702-44E6-A3A5-DD25ECCC7229}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_6" ID="{E5FCBF4F-FB4B-48D0-BEB6-CACC546225F5}" ShortID="1009807536">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_6" ID="{B6358F29-149A-496E-A68C-1D9FED1DC47E}" ShortID="438197425">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_6" ID="{B6358F29-149A-496E-A68C-1D9FED1DC47E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_7" ID="{12632A4B-C155-461C-9E38-06AE929AEDB8}" ShortID="542719657">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_7" ID="{55DC477F-4379-4BA4-BA7D-D223E8DD56DF}" ShortID="957644877">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_7" ID="{55DC477F-4379-4BA4-BA7D-D223E8DD56DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Creack_8" ID="{23388D60-FB2F-4993-9EAD-0ED089982470}" ShortID="440937774">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Creack_8" ID="{3A72503D-EA07-49F1-93EA-E45B8C7A07A4}" ShortID="732342376">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Creacks\Box_Wood_Creack_8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Creack_8" ID="{3A72503D-EA07-49F1-93EA-E45B8C7A07A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood_Hit" ID="{123E58F8-21C4-40BA-96E1-89D8B11BABDE}" ShortID="790346528">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{883545EB-B7FB-4B5A-8BE2-4F877D3750AE}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-600"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5C12419B-F505-4D84-A4D2-BA643B5C4797}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Box_Wood_Hit_1" ID="{BE4EBB76-5576-4257-B9E1-BDFC1084DC4A}" ShortID="982777214">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Hit_1" ID="{F325062E-5801-4719-8451-A66A4162CFDF}" ShortID="621447903">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Hit\Box_Wood_Hit_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Hit_1" ID="{F325062E-5801-4719-8451-A66A4162CFDF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Hit_2" ID="{500EEB25-D29A-4FF8-A44F-8100867E90DF}" ShortID="596211063">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Hit_2" ID="{D81D154A-FCFB-4111-A59D-F7E5F5D73007}" ShortID="938140054">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Hit\Box_Wood_Hit_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Hit_2" ID="{D81D154A-FCFB-4111-A59D-F7E5F5D73007}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Hit_4" ID="{A31664E5-7BC9-4BC8-8212-9C2294C2A78B}" ShortID="818604752">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Hit_4" ID="{0EE4A1C1-32C4-4E0C-9E57-03C0F64BFC6B}" ShortID="475923445">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Hit\Box_Wood_Hit_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Hit_4" ID="{0EE4A1C1-32C4-4E0C-9E57-03C0F64BFC6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Hit_6" ID="{7B9ADB61-6ED2-4778-BF2B-E3677DF41FE5}" ShortID="554655872">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Hit_6" ID="{900D71B4-B7CB-4A6F-9164-2DD5636770F0}" ShortID="1044735367">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Hit\Box_Wood_Hit_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Hit_6" ID="{900D71B4-B7CB-4A6F-9164-2DD5636770F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Box_Wood_Hit_8" ID="{F399D9C5-09DE-4181-B9C2-CB8CFD856609}" ShortID="358757408">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7E601AF5-0D1D-4DBF-9B34-FBC6C8AAE601}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD51C5D6-DD92-47B8-9F21-71E09373B025}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Box_Wood_Hit_8" ID="{D4A6196D-CCF1-4B8A-8909-A6EC06B19E3E}" ShortID="403444313">
+													<Language>SFX</Language>
+													<AudioFile>Box\boxesDown\Wood_Hit\Box_Wood_Hit_8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Box_Wood_Hit_8" ID="{D4A6196D-CCF1-4B8A-8909-A6EC06B19E3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="New Blend Track" ID="{DAB9AF07-8016-4348-88E0-41495BECC264}" ShortID="486071529">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{97AE1C2D-7450-46E4-B588-48035DA00CD9}" ShortID="779744484">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{E37F2D7E-A647-424B-9710-B9131F16C6E9}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>48</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-50</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{BD17ADE5-CAD5-4749-AB66-8AD56D13FD5B}" ShortID="901782100">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D78E9F53-C457-4B4E-80A0-6E244ECC27B6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Down" ID="{8AE66860-55FD-4317-B999-0ECE5AFA070A}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="New Blend Track_01" ID="{82ED66D6-7AB6-4F1E-A39C-A2F50C44AFD5}" ShortID="880513089">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{9FB75C6A-1A30-4761-9572-B2C36DEB82B0}" ShortID="484972221">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{ADF0F6F6-08C3-4633-BDAD-9668BCEE61B2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-4</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>41</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{5D34E3A7-50D9-43DB-894E-2EBB6F1C5754}" ShortID="772030137">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9203B0BE-66E4-4CEC-B135-A7FC58D0F3EB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0.81236</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-6.0206</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Wood_Creacks" ID="{69067C1D-0163-4193-B5D3-AA57C7F2ED78}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="New Blend Track_02" ID="{155762B5-CC35-4E05-96ED-8793D6922D3B}" ShortID="959950759">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{130BC23E-19F0-4CBF-8410-24B0E48F4C01}" ShortID="581334355">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Box_Crash" ID="{FF31F71E-70B8-412F-8D77-A0454C32F056}" WorkUnitID="{98154EE9-D1A0-4A1D-A1F7-7999F6B76DDF}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C5205784-BEDC-48EF-95C9-690CB245C653}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-8.94317</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Wood_Hit" ID="{123E58F8-21C4-40BA-96E1-89D8B11BABDE}"/>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

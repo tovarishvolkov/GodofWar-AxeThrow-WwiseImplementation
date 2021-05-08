@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C7BC3877-6413-4C99-A56C-9091B83E9D3C}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Box" ID="{C7BC3877-6413-4C99-A56C-9091B83E9D3C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_boxesDown" ID="{DCCE4698-38AC-464B-B5B0-B00BFB28D4E2}">
+					<ChildrenList>
+						<Action Name="" ID="{0D87C004-69FE-4AE2-AF01-A84B2F9D848F}" ShortID="936897755">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boxesDown" ID="{BCF58F0F-80EC-4883-80AF-9540CA2298BF}" WorkUnitID="{8E359B9D-FFF8-49E6-96B0-4D1D7FDF22D3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

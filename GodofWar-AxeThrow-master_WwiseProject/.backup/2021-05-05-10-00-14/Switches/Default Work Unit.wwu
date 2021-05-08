@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FA70BAA4-7F2A-4056-A9F3-8BDBBC776C6F}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{FA70BAA4-7F2A-4056-A9F3-8BDBBC776C6F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Axe_Punch_Switch" ID="{BFA5B38A-7EF7-41BB-8A87-D43EB2A9EF2C}">
+					<ChildrenList>
+						<Switch Name="Stone" ID="{50D2E1FB-0227-4D57-99E2-6CB3CC773C93}"/>
+						<Switch Name="Wood" ID="{5AF0919A-65B0-43DE-A743-4633937D0612}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
