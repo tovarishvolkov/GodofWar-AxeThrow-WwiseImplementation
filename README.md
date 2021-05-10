@@ -1,2 +1,3 @@
-# GodofWar-AxeThrow-master
- https://github.com/tovarishvolkov/God-of-War-s-Axe-Throw-Mix-and-Jam-Wwise-Implementation.git
+# GodofWar-AxeThrow-WwiseImplementation
+
+Original project https://github.com/mixandjam/GodofWar-AxeThrow
